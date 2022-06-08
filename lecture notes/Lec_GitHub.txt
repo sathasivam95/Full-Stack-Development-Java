@@ -1,0 +1,54 @@
+Environments
+
+Dev Env 
+--> Test Env 
+--> UAT/Demo Env 
+--> Production Env (available to end-user)
+
+IMPORTANT
+GitHub
+Version Control System
+
+Cycle 
+--> Requirements(JIRA Ticket) 
+--> Take copy of code from git(checkout/clone) 
+--> Make the changes (branch)
+--> Dev test your changes 
+--> Pull request (merge from all other branches after review) 
+--> Lead reviews your code 
+--> Merge 
+--> New feature branch has all changes from all team members 
+--> Test team takes new build from new branch
+--> Test/Green Flag
+--> Changes are available as new release
+
+Steps for GitHub
+1) Create the Repository with same name as your github repo name (Highly unlikely in work as you are not a lead developer yet)
+2) Put all your files
+3) Initialise git Repo using below command
+
+git init
+
+4) Adding files into working tree
+
+git add #Name of the File# (dun put it "git add" as it will add all the files)
+git status (shows the files to be uploaded)
+
+5) Commit your changes
+git commit -m "first commit" 
+
+6) Add main branch
+git branch -M main (Used only once)
+
+7) Connecting our local repo to github we add origin 
+git remote add origin https://github.com/sathasivam95/Full-Stack-Development-Java.git
+
+8) push the changes
+git push -u origin main
+
+Give credentials if it asks
+
+Day to Day Work -->
+1) git add
+2) git commit
+3) git push

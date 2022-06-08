@@ -1,0 +1,97 @@
+w/o Static
+Use the class to create the object.
+Create an object and use dot notation to access.
+
+w static
+Shared among all classes.
+If there is static, you do not need object to access it. (You don't need object to call static)
+Use class name to access it, that's all.
+Java allocates an integer/boolean/float/string with no value to 0/false/0.0/null.
+this.x --> Points to the current object.
+
+You cannot access non-static from static
+
+If the condition is true, then program executes.
+If the condition is not true, then program passes to else statement and executes it.
+
+Package organises the program.
+Scanner is a class that comes from java.util package.
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter you age");
+int age = sc.nextInt();
+if (age<20)
+
+Nested If-Else
+If-else inside if-else
+
+If-else Questions:
+
+1) WAP to examine if a person is allowed in party or not based on below rules: 
+I) should be older than 21, 
+ii) should not be single, 
+iii) should wear shoes.
+
+2) WAP for calculating students grade based on below rules - 
+I) if he scored 90-100 % marks then his 'A', 
+		80-90 --> 'B', 
+		70-80 --> 'C' otherwise Failed.
+
+While loop the condition is true, it will continue executing the program.
+Do while, even if the condition is false it will run at least one time.
+
+Interview Questions
+What is the difference between while loop and do while loop.
+Ans:
+Can we have array of mixed variety in Java.
+Ans: No, because Java is a static typed language.
+
+For Loop
+
+Array --> collection of similar items but all of similar types which are indexed
+numbers.length --> Using length reduces the amount of human error
+
+1) WAP to print below patterns using any loop of your choice (Decreasing) (DONE)
+
+******
+*****
+****
+***
+**
+*
+
+Hint: Nested Loops (Increasing or Decreasing)
+
+2) WAP to print below patterns using any loop of your choice (Increasing) (DONE)
+
+*
+**
+***
+****
+*****
+******
+
+3) Christmas Tree (DONE)
+       *
+     * * *
+   * * * * *
+ * * * * * * * 
+      * *
+      * *
+
+4) WAP to filter even numbers from [2,3,55,65,42,67] DONE
+
+5) WAP to filter out even and odd numbers from array of numbers from 1 to 50 using function, 
+input one array, output two array. DONE
+
+6) WAP to perform sorting of below array [2,34,56,12,34,1,5] using function 
+both in ascending and descending order one by one. Input one array and output two array.
+Try to create separate function and call in main. Done Maybe?
+
+
+
+
+
+
+
+
+

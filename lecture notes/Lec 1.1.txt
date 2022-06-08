@@ -1,0 +1,53 @@
+Java --> java 8 
+open source programming language, OOP (object oriented programming), compiled language, static typed language
+
+java (english) 	--> compilation --> machine language (machine independency)
+
+example.java 	--> compilation(java compiler) --> example.class (machine understands, windows, linux, mac understands class files)
+
+1) Compilation 		-- java, typescript
+2) Interpretation 	-- javascript, python (Python is pure object-oriented progamming)
+
+python 	--> interpreted --> executes immediately
+
+OOP 	--> style of programming where we consider everything as object
+
+object 	--> real-world entity
+
+object 	--> 1) properties/attributes/data e.g., (age, gender, color, passport)
+	--> 2) functionality/behaviour e.g., (laptop runs games, run programs, plays videos and audio)
+
+class 	--> template/blueprint for creating objects e.g., (clinic form, application form)
+
+General Convention: start with capital words for class
+
+Runtime Arguments --> Values that has to be accepted from the runtime
+
+Static means you do need object to call. (No connection to object)
+
+Access modifiers 	--> Public (Anyone can access)
+			--> Private (Only you can access)
+			--> Protected (Strangers cannot access, but your family members can)
+
+Questions to Answer !
+
+What is Inheritance?
+What is Primitive?  
+What is static type language?
+
+
+
+
+
+
+
+
+Interview Questions
+
+1) What is java?
+2) What is compilation?, Is java compiled or interpreted language?
+3) What is JDK (Java Development Kit), JRE and JVM?
+4) What is OOPs?
+5) What is object?
+6) What is class?
+

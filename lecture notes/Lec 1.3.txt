@@ -1,0 +1,136 @@
+Technical Interview Questions
+
+Variables
+What is a variable?
+What is a variable declaration?
+What is a variable assignment?
+What does the final keyword mean?
+What does it mean to cast a variable?
+
+Methods
+What makes up a method's signature?
+What is a method parameter?
+What is a method body?
+What does the static keyword mean?
+What does the final keyword mean?
+What does the term override mean?
+What does the term overload mean?
+
+Arrays
+What is an array?
+What does an array hold?
+What are the limitations of an array?
+Is an array an object?
+The first value in an array can be found at what index?
+What is an ArrayIndexOutOfBoundException?
+Making Decisions
+What is a boolean expression?
+What is a switch statement?
+What is an 'if' statement?
+What is an 'else' statement?
+What is an 'else if' statement?
+
+Loops
+What is a loop?
+What is a for loop?
+What is a for-each loop?
+What is a while loop?
+What is a do-while loop?
+What is the difference between a while loop and a do/while loop?
+
+Java/JVM
+How is the import keyword used?
+What is a package?
+What is JavaDoc?
+What is the stack?
+What kinds of variables are created there?
+What is garbage collection?
+How does the garbage collector know when to return memory to the heap?
+Is the Java language pass by value or pass by reference?
+What does pass by value mean?
+What does pass by reference mean?
+What is a NullPointerException?
+
+Objects
+What is a class?
+What is an object?
+What is the heap?
+What is scope?
+What is an accessor?
+What is a mutator?
+What is a constructor?
+What is shadowing?
+What does the public keyword mean?
+What does the static keyword mean?
+What does the private keyword mean?
+What does the abstract keyword mean? How is it used in conjunction with classes?
+What is polymorphism?
+What does encapsulation mean?
+What does it mean if a class is cohesive?
+What is the single responsibility principle?
+What is data hiding?
+What does the term generic mean?
+What are the two categories of nested classes?
+What is a local class?
+What is a static nested class?
+What level of access to the properties and methods of the enclosing class does a static nested class have?
+Under what conditions can a local class access variables in the enclosing scope?
+What is the default constructor?
+
+Interfaces
+What is an interface?
+How do interfaces help achieve polymorphism?
+
+Inheritance
+What is inheritance?
+What does it mean if one class is derived from another class?
+What does it mean if one class extends another class?
+How does inheritance help achieve polymorphism?
+What is a base class?
+What is an abstract base class?
+What is a superclass?
+What is a subclass?
+What is specialization?
+
+N-Tier Design
+What does MVC stand for? What is it?
+What is a model?
+What is a controller?
+What is a view?
+What is a DAO?
+What does it mean to be loosely coupled?
+Why is it a good idea to split your applications into layers?
+
+Collections
+What is an ArrayList?
+What is a List? How is it different than an ArrayList?
+What is a HashMap?
+What is a Map? How is it different than a HashMap?
+What is a Collection?
+What is an iterator?
+
+Exceptions
+What is an exception?
+What is an unchecked exception?
+What is a checked exception?
+What is a runtime exception?
+What does a finally block do?
+What is a try/catch?
+What does the throws keyword mean?
+
+Lambdas/Streams
+What is a lambda?
+What is a stream (in the context of the new Java 8 Collection API)?
+What are aggregate operations?
+What is a pipeline?
+
+Spring Core
+What are the 4 design principles of Spring?
+What is dependency injection?
+What is constructor injection?
+What is setter injection?
+
+Lab
+1) WAP to calculate how many times particular word is getting repeated in a paragraph of your choice.
+2) WAP to find number of vowels in a string.
+
