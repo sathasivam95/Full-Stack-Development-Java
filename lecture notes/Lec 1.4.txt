@@ -1,0 +1,18 @@
+OOPs
+Obect Oriented Programming
+It supports OOP
+Style of programming where we consider everything as object.
+
+Object --> Any World Entity
+1) State/Properties
+2) Behaviour/Functionality
+
+Class --> Template/Blueprint for creating objects
+
+Lab
+
+1) Grading System using OOP.
+2) Create a command line application of calculator using OOP. (DONE)
+3) Create a command line based application for Pizza delivery, Pizza Menu, prices, quantity, checkout and total bill with quantity, consider these functionalities and use OOP approach.
+
+
