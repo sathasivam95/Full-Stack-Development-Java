@@ -15,13 +15,6 @@ class Grades{
         this.english = english;
         this.average = average;
     }
-
-
-//    public void getStudentInfo(){
-//        System.out.println(this.name + " you have scored" + this.maths + " for Math"+ this.science +
-//                " for Science"+ this.english + " for English" + this.average + " and this is your average.");
-//    }
-
 }
 
 public class NewGradingSystem {
@@ -45,7 +38,6 @@ public class NewGradingSystem {
 
         NewGradingSystem obj = new NewGradingSystem();
 
-
         Grades student = new Grades("Rajesh",60,70,80,70);
         Grades student1 = new Grades("John",40,100,10,50);
         Grades student2 = new Grades("Doe",100,80,80,86.67);
@@ -58,3 +50,8 @@ public class NewGradingSystem {
 
     }
 }
+
+//    public void getStudentInfo(){
+//        System.out.println(this.name + " you have scored" + this.maths + " for Math"+ this.science +
+//                " for Science"+ this.english + " for English" + this.average + " and this is your average.");
+//    }
