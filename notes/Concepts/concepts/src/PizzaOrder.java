@@ -6,35 +6,30 @@ class Pizza {
 
     // properties of menu
     String pizzaName;
+    int pizzaIndex;
     int price;
 
     //constructor
-    public Pizza(String pizzaName, int price){
+    public Pizza(String pizzaName, int pizzaIndex, int price){
         this.pizzaName = pizzaName;
+        this.pizzaIndex = pizzaIndex;
         this.price = price;
     }
-
     //method to calculate total bill from the pizza order
-    public void totalBill(int quantity){
-        price = price * quantity;
+
+    public String getPizzaName() {
+        return pizzaName;
     }
 
-    public String getPizzaName(){
-        return pizzaName;
+    public int getPizzaIndex(){
+        return pizzaIndex;
     }
 
     public int getPrice() {
         return price;
     }
 
-    public String toString(){
-        String result = "";
-        result = "You have selected " + pizzaName + " as the pizza of your choice for $" +;
-        return result;
-    }
-
 }
-
 
 // once instantiated the pizza object will the properties and behaviour
 // in Main create the pizza object
@@ -44,20 +39,33 @@ public class PizzaOrder {
 
     public static void main(String[] args) {
 
-        String pizzaName;
+
+        System.out.println("-------Welcome to Pizza Haven-------");
+        System.out.println("---------Here is the Menu-----------");
+        System.out.println("(1) Margherita  --------- $18");
+        System.out.println("(2) BBQ Chicken --------- $25");
+        System.out.println("(3) Hawaiian ------------ $15");
+        System.out.println("(4) Beef Bonanza -------- $30");
+
+        int pizzaIndex;
         int quantity;
+        int totalBill;
+
+
+        Pizza pizza1 = new Pizza("Margherita",1,18);
+        Pizza pizza2 = new Pizza("BBQ Chicken",2,25);
+        Pizza pizza3 = new Pizza("Hawaiian",3,15);
+        Pizza pizza4 = new Pizza("Beef Bonanza",4,30);
 
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the index of the Pizza: ");
-        pizzaName = sc.next();
+        pizzaIndex = sc.nextInt();
 
         System.out.print("Enter the quantity: ");
         quantity = sc.nextInt();
 
-        Pizza pizza1 = new Pizza(pizzaName, quantity);
-
-        System.out.println(pizza1.toString());
+//        price =  price*PizzaIndex;
 
         //Instantiate Objects
 
@@ -66,8 +74,7 @@ public class PizzaOrder {
 //        Pizza pizza4 = new Pizza("Beef Bonanza",30);
 //        Pizza pizza5 = new Pizza("Vegetarian",28);
 
-        pizza1.totalBill(8);
-        System.out.println(pizza1.getPrice());
+
 
     }
 

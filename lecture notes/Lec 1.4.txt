@@ -9,6 +9,12 @@ Object --> Any World Entity
 1) State/Properties
 2) Behaviour/Functionality
 
+4 Important Concepts of OOP
+1) Encapsulation
+2) Abstraction
+3) Inheritance
+4) Polymorphism
+
 Lab
 
 1) Grading System using OOP.
