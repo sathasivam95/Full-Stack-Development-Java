@@ -23,13 +23,14 @@ Cycle
 --> Changes are available as new release
 
 Steps for GitHub
+git bash from the main folder (e.g WileyEdge is ur parent folder --> then gitbash from there)
 1) Create the Repository with same name as your github repo name (Highly unlikely in work as you are not a lead developer yet)
 2) Put all your files
 3) Initialise git Repo using below command
-
-git init
+ --> git init
 
 4) Adding files into working tree
+git add .
 
 git add #Name of the File# (dun put it "git add" as it will add all the files)
 git status (shows the files to be uploaded)
