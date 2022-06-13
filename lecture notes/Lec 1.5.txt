@@ -1,0 +1,6 @@
+Over-riding come after 
+same name method within the same class(parent/child) but might have different parameters
+Parent pc = new Child();
+pc.myIntro(); --> gets from child object
+
+// over-riding --> using latest version of method implementation in parent child hireachy
