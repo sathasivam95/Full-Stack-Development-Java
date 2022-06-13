@@ -4,3 +4,11 @@ Parent pc = new Child();
 pc.myIntro(); --> gets from child object
 
 // over-riding --> using latest version of method implementation in parent child hireachy
+// abstraction --> some details
+// can be provided later we can only
+// decide on the body of the method (e.g., Contracts)
+// 2 ways for achieving abstraction
+// 1) Abstract class --> concrete as well as abstract method
+// 2) Interface
+
+// Spend this week to do MCQ
