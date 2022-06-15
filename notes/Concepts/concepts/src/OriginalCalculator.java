@@ -17,9 +17,7 @@ class OGCalculator{
     double multiplication(){
         return a*b;
     }
-    double division(){
-        return a/b;
-    }
+    double division(){return a/b;}
 }
 
 public class OriginalCalculator {
@@ -48,5 +46,4 @@ public class OriginalCalculator {
         }
         System.out.println("Answer: " + c);
     }
-
 }

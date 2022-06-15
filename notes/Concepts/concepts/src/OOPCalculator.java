@@ -65,7 +65,7 @@ class ScienceCal extends Calculator{
         double sum = x*y;
         return sum;
     }
-    public double advCube(double x, double y, double z){
+    public double advVolume(double x, double y, double z){
         double sum = x*y*z;
         return sum;
     }

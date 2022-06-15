@@ -1,0 +1,12 @@
+1) No --> You always need try-catch-finally. finally block always executes
+2) There is nothing wrong.
+3) It will hide the other exceptions. Exception e should not be the first one.
+
+4a) _error // Answer is compile error. The array is not initalized.
+4b) _compile error // Answer error
+4c) _checked exception // Answer no exception
+4d) _no exception // Answer checked exception
+
+// final keyword --> 1) with class --> no more child, you can inherit final class
+// final keyword --> 2) with methods --> it won't allow overriding
+// final keyword --> 2) with variables -->  Once you assign final variable, Cannot re-assign.

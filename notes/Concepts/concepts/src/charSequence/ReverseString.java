@@ -27,7 +27,7 @@ class ReverseString implements CharSequence{
     }
 
     @Override
-    public CharSequence subSequence(int start, int end) {
+    public void subSequence(int start, int end) {
         if (start < 0){
             throw new StringIndexOutOfBoundsException(start);
         }if (end > s.length()){
