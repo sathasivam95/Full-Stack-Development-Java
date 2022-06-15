@@ -1,3 +1,3 @@
 # Full-Stack-Development-Java
-## Tutorials
+## General info
 This repo contains the tutorial for Java Development.
