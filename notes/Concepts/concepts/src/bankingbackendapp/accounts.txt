@@ -1,0 +1,21 @@
+rajesh
+debit card
+06/2024
+tom
+credit card
+06/2022
+bill
+debit card
+07/2025
+john
+debit card
+01/2028
+tim
+debit card
+01/2023
+tina
+debit card
+06/2022
+mike
+debit card
+06/2022

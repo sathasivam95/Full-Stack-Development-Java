@@ -31,9 +31,9 @@ class HSBC implements CentralBank, WorldBank{
         }
 
     @Override
-    public void getWorldEMI(int rate) {
-        System.out.println("so the HSBC EMI will be from world bank" + rate*8);
-    }
+    public void getWorldEMI(int rate) {}
+
+
 }
 
 class OCBC implements CentralBank{

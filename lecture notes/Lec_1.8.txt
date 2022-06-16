@@ -1,0 +1,101 @@
+Data Structures
+How we organise data into memory.
+
+Collection Framework --> Data Structure Implementation of Objects
+
+1) List --> Duplicates are allowed
+2) Set --> Duplicates are not allowed
+3) Map --> key-value pair (e.g., Barcode and Product)
+4) Queue --> one after another
+
+
+// LinkedList --> good for fast insertion and deletion but slow iteration
+// ArrayList --> good for fast iteration but slow insertion and deletion
+// Vector --> same as ArrayList but synchronized for thread safety
+
+Example:
+
+Banking Backend App
+1) Card expiry search everyday 
+--> Select then show the data --> Slow Insertion and Deletion
+
+2) Card upgrade functionality
+--> Upgrade the card/downgrade --> Remove the old card and add the new card --> Fast Insertion and Deletion 
+
+3) Card creation 
+--> unique --> HashSet
+--> unique and ordered (indexing) --> LinkedHashSet
+
+For sorting collection objects(students)
+1) Compartor
+2) Comparable
+
+
+
+card class 
+getter setter 
+proper command line application
+
+
+Question: 
+
+At the beginning of this lesson, you learned that the core collection 
+interfaces are organized into two distinct inheritance trees. 
+One interface in particular is not considered to be a true Collection, 
+and therefore sits at the top of its own tree. What is the name of this interface?
+
+Answer: Map
+
+Question: Each interface in the collections 
+framework is declared with the <E> syntax, which tells you that it is generic. 
+When you declare a Collection instance, what is the advantage of specifying the type of objects that 
+it will contain?
+
+Answer: Specifying the type allows the compiler to verify (at compile time) 
+that the type of object you put into the collection is correct, thus reducing errors at runtime.
+
+Question: What interface represents a collection that does not allow duplicate elements?
+Answer: Set
+
+Question: What interface forms the root of the collections hierarchy?
+Answer: Collection
+
+Question: What interface represents an ordered collection that may contain duplicate elements?
+Answer: List
+
+Question: What interface represents a collection that holds elements prior to processing?
+Answer: Queue
+
+Question: What interface represents a type that maps keys to values?
+Answer: Map
+
+Question: What interface represents a double-ended queue?
+Answer: Deque
+
+Question: Name three different ways to iterate over the elements of a List.
+Answer: You can iterate over a List using streams, the enhanced for statement, or iterators.
+
+Question: True or False: Aggregate operations are mutative operations that modify the underlying collection.
+Answer: False. Aggregate operations do not mutate the underlying collection. 
+In fact, you must be careful to never mutate a collection 
+while invoking its aggregate operations. Doing so could lead to concurrency problems 
+should the stream be changed to a parallel stream at some point in the future.
+
+
+
+Exercises:
+1. Half-Done
+2.
+3.
+
+4.1) Use a List. Choose a random employee by picking a number between 0 and size()-1.
+4.2) Use a Set. Collections that implement this interface don't allow the same element to be entered more than once.
+4.3) Use a Map, where the keys are first names, and each value is a count of the number of employees with that first name.
+4.4) Use a Queue. Invoke add() to add employees to the waiting list, and remove() to remove them.
+
+
+
+
+
+
+
