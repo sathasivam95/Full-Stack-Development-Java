@@ -36,12 +36,6 @@ What is Primitive?
 What is static type language?
 
 
-
-
-
-
-
-
 Interview Questions
 
 1) What is java?

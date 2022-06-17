@@ -17,8 +17,6 @@ public class StringTrim {
         namesList.add("Fox");
 
 
-
-
     }
 
 
