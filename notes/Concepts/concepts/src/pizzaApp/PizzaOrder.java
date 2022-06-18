@@ -4,7 +4,46 @@ import java.util.ArrayList;
 
 public class PizzaOrder {
 
+    private int orderID;
+    private String customerName;
+    private int quantity;
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //    private double totalOrderCost;
 //    private final ArrayList<Pizza> pizzas;

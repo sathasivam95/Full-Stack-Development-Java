@@ -1,0 +1,18 @@
+Pizza App
+
+Create a command line based application for 
+Pizza Delivery, 
+Pizza Menu, 
+Prices, 
+Quantity, 
+Checkout 
+and Total Bill with Quantity,
+Consider this functionalities and use OOP approach.
+
+
+
+class Pizza --> pizzaName, price, size --> price will be allocated during the object initializing
+class Order --> orderId, customerName, quantity
+class PizzaApp --> printWelcomeMessage, 
+
+creating the menu means creating 4 pizza objects

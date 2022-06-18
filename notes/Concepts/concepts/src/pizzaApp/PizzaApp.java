@@ -17,35 +17,50 @@ public class PizzaApp {
     public static void printWelcomeMessage() {
         System.out.println("------------------------------------");
         System.out.println("-----Welcome to the Pizza Haven-----");
-        System.out.println("------------------------------------");
-
+        System.out.println("---------Here is the Menu-----------");
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
         printWelcomeMessage();
 
+        int index;
+        int quantity;
+        String option;
+
+        Scanner sc = new Scanner(System.in);
+        index = sc.nextInt();
+
+
+        System.out.println("(1) Margherita  ---------------- $19.99");
+        System.out.println("(2) BBQ Chicken ---------------- $25.99");
+        System.out.println("(3) Hawaiian ------------------- $15.99");
+        System.out.println("(4) Beef Bonanza --------------- $30.99");
+        System.out.println("(5) Vegetarian ----------------- $20.99");
+
+        System.out.println("Please select the index in the menu for the pizza of your choice.");
+        index = sc.nextInt();
+        System.out.println("Please select the quantity.");
+        quantity = sc.nextInt();
+        System.out.println("Do you want anything else? (y/n)");
+        option = sc.nextLine();
+
+
+    }
+}
 
 
 
 
-
-
-        System.out.println("Please select the index of the menu item: " );
-
-
-        System.out.println("Please select the quantity of the item: ");
-        int quantity = sc.nextInt();
 
         // Reading input regarding pizza index and pizza qty
 //        for(int i=1; i<=quantity; i++) {
 //            Pizza pizza = new Pizza();
 //
 //        }
-    }
 
-}
+
+
 
 
 //        // Creating PizzaOrder object and relevant information with regards to order
