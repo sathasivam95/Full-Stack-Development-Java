@@ -38,9 +38,10 @@ class PizzaOrder {
         this.customerName = customerName;
     }
 
-    public void displayOrderInfo(){
+    public void displayCustomerOrderInfo(){
+        System.out.println("------------------------------------");
         System.out.println("Hi! " +customerName+ "\nYour Order ID is " +orderID);
-
+        System.out.println("------------------------------------");
     }
 
 

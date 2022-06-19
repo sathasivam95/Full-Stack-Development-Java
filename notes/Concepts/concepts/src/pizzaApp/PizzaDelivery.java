@@ -26,7 +26,7 @@ public class PizzaDelivery {
         double previousPrice = 0.00;
 
         PizzaOrder order = new PizzaOrder();
-        order.displayOrderInfo();
+        order.displayCustomerOrderInfo();
 
         List<Pizza> pizzas = new ArrayList<Pizza>(); // list of pizza object
 
@@ -75,18 +75,20 @@ public class PizzaDelivery {
                     break;
             }
 
-            System.out.println("Breakdown: " + quantity + " no of " + pizzas.get(index).getPizzaName() + " for " + totalOrderCost);
-
             // Ask if you want to order again
             System.out.println("Do you want to add more? (y/n)");
             option = sc.next();
 
-            System.out.println("Your Total Cost: " +totalOrderCost );
-            System.out.println("Your Order ID: " +order.getOrderID());
-
             if(option.equals("n")){
+
+                System.out.println("Breakdown: " + quantity + " no of " + pizzas.get(index).getPizzaName() + " for " + totalOrderCost);
+                System.out.println("------------------------------------");
+                System.out.println("Your Total Cost: " +totalOrderCost );
+                System.out.println("Your Order ID: " +order.getOrderID());
+                System.out.println("------------------------------------");
                 System.out.println("Thanks for ordering at Pizza Haven!");
                 System.out.println("See you again soon!");
+                System.out.println("------------------------------------");
                 app = false;
 
                 // ends the program
