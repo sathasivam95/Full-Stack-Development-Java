@@ -1,5 +1,13 @@
 Pizza App
 
+//Whatever we write in class is in actual the property of object as we are
+//describing the object. If you want anything which should belong to class make it static !!
+//Once instantiated the pizza object will inherit the properties and behaviour
+//in Main create the pizza object
+//the template
+
+
+
 Create a command line based application for 
 Pizza Delivery, 
 Pizza Menu, 
@@ -9,10 +17,38 @@ Checkout
 and Total Bill with Quantity,
 Consider this functionalities and use OOP approach.
 
-
-
 class Pizza --> pizzaName, price, size --> price will be allocated during the object initializing
 class Order --> orderId, customerName, quantity
 class PizzaApp --> printWelcomeMessage, 
 
-creating the menu means creating 4 pizza objects
+creating the menu means creating 5 pizza objects
+
+Flow
+1. printWelcomeMessage
+2. After entering the name, it will generate an order ID.
+3. Display the menu
+4. Select the index of the pizza.
+5. Select the quantity.
+6. Calculate the totalordercost
+7. Do you want to add more? Loop to 4, then continue + adding the price from the previous order.
+8. Total Bill with quantity and end the program.
+
+Additional Flow
+1. printWelcomeMessage
+2. After entering the name, it will generate an order ID.
+3. Display the menu
+4. Select the index of the pizza.
+5. Select the quantity.
+6. Calculate the totalordercost
+7. Do you want to add more? (y/n) Loop to 4, then continue + adding the price from the previous order.
+8. After clicking n, Total Bill with quantity + Print out the relevant details
+10. End the program
+
+Dot Operator
+1. It separates a function and variable from an instance variable.
+2. It allows to access sub-packages and classes from a package.
+3. It leads to access the member of a class or a package.
+
+Breakdown: 2 no of Margherita for $39.98
+Do you want to checkout?
+Your total cost

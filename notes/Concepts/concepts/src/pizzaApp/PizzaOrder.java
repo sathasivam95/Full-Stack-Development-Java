@@ -1,16 +1,52 @@
 package pizzaApp;
 
-import java.util.ArrayList;
+import java.util.*;
 
-public class PizzaOrder {
+class PizzaOrder {
 
     private int orderID;
     private String customerName;
-    private int quantity;
+
+    public PizzaOrder(){
+
+        Random rand = new Random();
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter your name: ");
+        customerName = sc.nextLine();
+//        setCustomerName(customerName); // after entering the name it sets the customers name permanently
+
+        int upperBound = 10000;
+        orderID = rand.nextInt(upperBound);
+//        setOrderID(orderID); // after entering the order it sets the order id permanently
+
+    }
+
+    public int getOrderID() {
+        return orderID;
+    }
+
+    public void setOrderID(int orderID) {
+        this.orderID = orderID;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public void displayOrderInfo(){
+        System.out.println("Hi! " +customerName+ "\nYour Order ID is " +orderID);
+
+    }
 
 
 
 }
+
 
 
 
