@@ -1,11 +1,10 @@
-package pizzaApp;
+package pizzaapp;
 
 public class Pizza {
 
     private int index;
     private String pizzaName;
     private double price; // get and set because there are private methods
-    
 
     // Constructor
     public Pizza(int index, String pizzaName, double price) {

@@ -1,4 +1,4 @@
-package pizzaApp;
+package pizzaapp;
 
 import java.util.*;
 
@@ -14,11 +14,9 @@ class PizzaOrder {
 
         System.out.println("Enter your name: ");
         customerName = sc.nextLine();
-//        setCustomerName(customerName); // after entering the name it sets the customers name permanently
 
         int upperBound = 10000;
         orderID = rand.nextInt(upperBound);
-//        setOrderID(orderID); // after entering the order it sets the order id permanently
 
     }
 
@@ -43,7 +41,6 @@ class PizzaOrder {
         System.out.println("Welcome " +customerName+ "\nYour Order ID is " +orderID);
         System.out.println("------------------------------------");
     }
-
 
 
 }

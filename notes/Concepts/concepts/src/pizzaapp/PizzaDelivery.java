@@ -1,4 +1,4 @@
-package pizzaApp;
+package pizzaapp;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,19 +39,20 @@ public class PizzaDelivery {
 
         // Stream API and Lambda Reference
         // Displays the menu
-        pizzas.stream().forEach((p)->{p.displayPizzaInfo();});
+        pizzas.forEach(Pizza::displayPizzaInfo);
 
         Scanner sc = new Scanner(System.in);
 
-        while (app){
+        while(app){
 
-            int breakdown = 0;
+            System.out.println("------------------------------------");
             System.out.println("Please select the index from the menu for the pizza of your choice.");
             index = sc.nextInt();
             System.out.println("Please select the quantity: ");
             quantity = sc.nextInt();
 
             // gets the index of the pizzas object from arraylist and gets the price from it
+
             switch (index){
 
                 case 0:
@@ -83,7 +84,7 @@ public class PizzaDelivery {
 
             if(addMore.equals("n")){
 
-                System.out.println("Breakdown: " + quantity + " no of " + pizzas.get(index).getPizzaName() + " for " + totalOrderCost);
+                System.out.println("Cost Breakdown: " + quantity + " no of " + pizzas.get(index).getPizzaName() + " for " + totalOrderCost);
                 System.out.println("------------------------------------");
                 System.out.println("Your Total Cost: " +totalOrderCost );
                 System.out.println("Your Order ID: " +order.getOrderID());
@@ -94,15 +95,14 @@ public class PizzaDelivery {
                 app = false;
                 // ends the program
             }
-
         }
 
-        }
+    }
 }
 
-
-
-
-
+//Together
+//        Cost Breakdown: 2 no of Margherita for $39.98.
+//        Cost Breakdown: 4 no of BBQ Chicken for $103.96
+//        Your total cost $143.94
 
 

@@ -49,6 +49,8 @@ Dot Operator
 2. It allows to access sub-packages and classes from a package.
 3. It leads to access the member of a class or a package.
 
-Breakdown: 2 no of Margherita for $39.98
-Do you want to checkout?
-Your total cost
+
+Together
+Cost Breakdown: 2 no of Margherita for $39.98.
+Cost Breakdown: 4 no of BBQ Chicken for $103.96
+Your total cost $143.94

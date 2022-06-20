@@ -10,17 +10,19 @@ public class SquareOfListItems {
         System.out.println(mynum);
 
         // returns the square of no
-        mynum.stream().distinct().forEach(n -> System.out.println((int)Math.pow(n, 2)));
+        mynum.stream()
+                .distinct()
+                .forEach(n -> System.out.println((int)Math.pow(n, 2)));
 
         // returns the even no
-        mynum.stream().filter((i) -> {return i%2==0;}).forEach((i)->{
-            System.out.println(i);
-        });
+        mynum.stream()
+                .filter((i) -> {return i%2==0;})
+                .forEach(System.out::println); // method reference
 
         // returns the odd no
-        mynum.stream().filter((i) -> {return i%2!=0;}).forEach((i)->{
-            System.out.println(i);
-        });
+        mynum.stream()
+                .filter((i) -> {return i%2!=0;})
+                .forEach(System.out::println);
 
 
     }
