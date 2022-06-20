@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-class Student5{
+class Student6 {
     private int id;
     private String name;
 
-    public Student5(int id, String name) {
+    public Student6(int id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -31,14 +31,14 @@ class Student5{
 
     @Override
     public String toString() {
-        return "Student5{" +
+        return "Student6{" +
                 "name='" + name + '\'' +
                 '}';
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this.getId() == ((Student5)o).getId()){
+        if (this.getId() == ((Student6)o).getId()){
             return true;
         }else {
             return false;
@@ -53,10 +53,10 @@ class Student5{
 
 }
 
-class MyStudentComparator implements Comparator<Student5>{
+class MyStudentComparator implements Comparator<Student6>{
 
     @Override
-    public int compare(Student5 o1, Student5 o2) {
+    public int compare(Student6 o1, Student6 o2) {
         return o1.getName().compareTo(o2.getName());
     }
 }
@@ -64,12 +64,12 @@ class MyStudentComparator implements Comparator<Student5>{
 
 public class TestCollection7 {
     public static void main(String[] args) {
-        Student5 st1 = new Student5(101, "Rajesh");
-        Student5 st2 = new Student5(102, "Tom");
-        Student5 st3 = new Student5(103, "John");
-        Student5 st4 = new Student5(104, "Harry");
+        Student6 st1 = new Student6(101, "Rajesh");
+        Student6 st2 = new Student6(102, "Tom");
+        Student6 st3 = new Student6(103, "John");
+        Student6 st4 = new Student6(104, "Harry");
 
-        ArrayList<Student5> mylist = new ArrayList<>();
+        ArrayList<Student6> mylist = new ArrayList<>();
 
         mylist.add(st1);
         mylist.add(st3);

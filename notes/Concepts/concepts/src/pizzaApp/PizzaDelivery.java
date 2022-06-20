@@ -17,13 +17,13 @@ public class PizzaDelivery {
 
         printWelcomeMessage();
 
-        String option = "";
+        String addMore = "";
         int index;
+        int previousQuantity;
         int quantity;
         boolean app = true;
         double totalOrderCost = 0.00;
-        double price;
-        double previousPrice = 0.00;
+        double currentPrice;
 
         PizzaOrder order = new PizzaOrder();
         order.displayCustomerOrderInfo();
@@ -37,14 +37,15 @@ public class PizzaDelivery {
         pizzas.add(new Pizza(3,"Beef Bonanza",30.99));
         pizzas.add(new Pizza(4,"Vegan Bomb",20.99));
 
-        for (Pizza p:pizzas) {
-            p.displayPizzaInfo();
-        }
+        // Stream API and Lambda Reference
+        // Displays the menu
+        pizzas.stream().forEach((p)->{p.displayPizzaInfo();});
 
         Scanner sc = new Scanner(System.in);
 
         while (app){
 
+            int breakdown = 0;
             System.out.println("Please select the index from the menu for the pizza of your choice.");
             index = sc.nextInt();
             System.out.println("Please select the quantity: ");
@@ -54,32 +55,33 @@ public class PizzaDelivery {
             switch (index){
 
                 case 0:
-                    price = pizzas.get(0).getPrice();
-                    totalOrderCost = price*quantity;
+                    currentPrice = pizzas.get(0).getPrice();
+                    totalOrderCost = currentPrice*quantity;
                     break;
                 case 1:
-                    price = pizzas.get(1).getPrice();
-                    totalOrderCost = price*quantity;
+                    currentPrice = pizzas.get(1).getPrice();
+                    totalOrderCost = currentPrice*quantity;
                     break;
                 case 2:
-                    price = pizzas.get(2).getPrice();
-                    totalOrderCost = price*quantity;
+                    currentPrice = pizzas.get(2).getPrice();
+                    totalOrderCost = currentPrice*quantity;
                     break;
                 case 3:
-                    price = pizzas.get(3).getPrice();
-                    totalOrderCost = price*quantity;
+                    currentPrice = pizzas.get(3).getPrice();
+                    totalOrderCost = currentPrice*quantity;
                     break;
                 case 4:
-                    price = pizzas.get(4).getPrice();
-                    totalOrderCost = price*quantity;
+                    currentPrice = pizzas.get(4).getPrice();
+                    totalOrderCost = currentPrice*quantity;
                     break;
+
             }
 
             // Ask if you want to order again
             System.out.println("Do you want to add more? (y/n)");
-            option = sc.next();
+            addMore = sc.next();
 
-            if(option.equals("n")){
+            if(addMore.equals("n")){
 
                 System.out.println("Breakdown: " + quantity + " no of " + pizzas.get(index).getPizzaName() + " for " + totalOrderCost);
                 System.out.println("------------------------------------");
@@ -90,14 +92,13 @@ public class PizzaDelivery {
                 System.out.println("See you again soon!");
                 System.out.println("------------------------------------");
                 app = false;
-
                 // ends the program
             }
 
         }
-    }
-}
 
+        }
+}
 
 
 

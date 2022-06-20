@@ -1,3 +1,2 @@
-Pizza Order
-
-
+1) WAP to calculate sqaure of all the list items. DONE
+2) Create another two outputs one with even items and another with odd items. DONE
