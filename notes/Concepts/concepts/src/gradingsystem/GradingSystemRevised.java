@@ -1,10 +1,4 @@
-1) Student grade calculator example, take 5 students objects calculate grade, who scored maximum marks.
-Map, Reduce, Filter
-grade.stream()
-	.map(i -> i.maths+i.science+i.english)
-	.forEach(j -> System.out.println(j));
-
-2) Who scored minimum marks in maths.
+package gradingsystem;
 
 import java.util.*;
 
@@ -83,24 +77,22 @@ class Student10{
 }
 
 
+public class GradingSystemRevised {
 
-
-public class NewGradingSystem {
-
-    public void grades(Grades grades)
-
-    {
-        if (grades.averageMarks() <= 100 && grades.averageMarks() >= 90)
-            System.out.println("You scored A");
-
-        else if(grades.average < 90 && grades.average >= 80)
-            System.out.println("You scored B");
-
-        else if(grades.average < 80 && grades.average >= 70)
-            System.out.println("You scored C");
-        else
-            System.out.println("You Failed!");
-    }
+//    public void grades(Grades grades)
+//
+//    {
+//        if (grades.averageMarks() <= 100 && grades.averageMarks() >= 90)
+//            System.out.println("You scored A");
+//
+//        else if(grades.average < 90 && grades.average >= 80)
+//            System.out.println("You scored B");
+//
+//        else if(grades.average < 80 && grades.average >= 70)
+//            System.out.println("You scored C");
+//        else
+//            System.out.println("You Failed!");
+//    }
 
     public static void main(String[] args) {
 
@@ -125,10 +117,14 @@ public class NewGradingSystem {
         System.out.println("Enter Science Grade: ");
         gradeInput = sc.nextInt();
         grade.setScience(gradeInput);
-        System.out.println("Total Grade: "+grade.totalMarks(grade.getEnglish(), grade.getMaths(), grade.getScience()));
+        System.out.println("Total Marks: "+grade.totalMarks(grade.getEnglish(), grade.getMaths(), grade.getScience()));
         System.out.println("Average Grade: "+grade.averageMarks(grade.getEnglish(), grade.getMaths(), grade.getScience()));
-        System.out.println("Result: "+);
 
+
+
+
+    }
+}
 
 
 //        System.out.println("Enter English Grade: "+grade.getEnglish());
@@ -143,8 +139,6 @@ public class NewGradingSystem {
 
 
 
-
-
 //        List<gradingsystem.Grades> grade = new ArrayList<>();
 //
 //        grade.add(new gradingsystem.Grades("Rajesh",60,70,80,70));
@@ -155,11 +149,6 @@ public class NewGradingSystem {
 //        System.out.println(grade);
 //        // Who scored maximum marks?
 //        grade.stream()
-
-
-
-    }
-}
 
 
 

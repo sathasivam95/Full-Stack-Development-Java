@@ -6,11 +6,12 @@ import java.util.stream.Collectors;
 
 class Grades{
 
-    String name;
-    int maths;
-    int science;
-    int english;
-    double average;
+    private String name;
+    private int maths;
+    private int science;
+    private int english;
+//    private int average;
+//    private int totalMarks;
 
     public String getName() {
         return name;
@@ -44,62 +45,77 @@ class Grades{
         this.english = english;
     }
 
-    public double getAverage() {
-        return average;
+    public int getAverage() {
+        return (maths+science+english)/3;
     }
 
-    public void setAverage(double average) {
-        this.average = average;
-    }
+//    public void setAverage(int average) {
+//        this.average = average;
+//    }
 
 
-    Grades(String name, int maths, int science, int english,double average){
+    Grades(String name, int maths, int science, int english){
         this.name = name;
         this.maths = maths;
         this.science = science;
         this.english = english;
-        this.average = average;
+
     }
-}
+    public int getTotalMarks(){
+        return maths+science+english;
+    }
 
-public class NewGradingSystem {
-
-    public void grades(Grades grades)
-
-    {
-        if (grades.average <= 100 && grades.average >= 90)
-            System.out.println("You scored A");
-
-        else if(grades.average < 90 && grades.average >= 80)
-            System.out.println("You scored B");
-
-        else if(grades.average < 80 && grades.average >= 70)
-            System.out.println("You scored C");
-        else
-            System.out.println("You Failed!");
+    public void printAverageGrades(){
+        {
+            if (getAverage() <= 100 && getAverage() >= 90)
+                System.out.println("You scored A");
+            else if(getAverage() < 90 && getAverage() >= 80)
+                System.out.println("You scored B");
+            else if(getAverage() < 80 && getAverage() >= 70)
+                System.out.println("You scored C");
+            else
+                System.out.println("You Failed!");
+        }
     }
 
     public static void main(String[] args) {
 
-        NewGradingSystem obj = new NewGradingSystem();
-        List<Grades> grade = new ArrayList<>();
+        Grades student1 = new Grades("Rajesh",60,70,80);
+        Grades student2 = new Grades("John",40,100,10);
+        Grades student3 = new Grades("Doe",100,80,80);
+        Grades student4 = new Grades("Tom",20,15,42);
+        Grades student5 = new Grades("George",100,75,65);
 
-        grade.add(new Grades("Rajesh",60,70,80,70));
-        grade.add(new Grades("John",40,100,10,50));
-        grade.add(new Grades("Doe",100,80,80,86.67));
-        grade.add(new Grades("Tom",20,15,42,25.67));
+        List<Grades> students = Arrays.asList(student1,student2,student3,student4,student5);
 
-        System.out.println(grade);
         // Who scored maximum marks?
-        grade.stream()
-                .map(i -> i.maths+i.science+i.english)
-                .forEach(j -> System.out.println(j));
-//                .max((x,y,z) -> )
+        students.stream()
+//                .map(Grades::getTotalMarks)
+                .max(Comparator.comparing(Grades::getName));
 
+
+
+
+
+
+
+
+
+//        grade.stream()
+//                .mapToInt(i->i.maths+ i.english+i.science)
+//                .forEach(j -> System.out.println(j));
 //
 
 
 
+//                .map(i -> i.maths+i.science+i.english)
+//                .forEach(j -> return {});
+
+
+
+//                .max((x,y,z) -> )
+
+//
 
 
 
@@ -110,4 +126,52 @@ public class NewGradingSystem {
 //    public void getStudentInfo(){
 //        System.out.println(this.name + " you have scored" + this.maths + " for Math"+ this.science +
 //                " for Science"+ this.english + " for English" + this.average + " and this is your average.");
+//    }
+
+
+
+
+
+//        System.out.println("Enter English Grade: "+grade.getEnglish());
+//        gradeInput = sc.nextInt();
+//        System.out.println("Enter Maths Grade: "+grade.getMaths());
+//        gradeInput = sc.nextInt();
+//        System.out.println("Enter Science Grade: "+grade.getScience());
+//        gradeInput = sc.nextInt();
+//        System.out.println("Your Total is: "+grade.totalMarks(grade.getEnglish(), grade.getMaths(), grade.getScience()));
+//        System.out.println("Your average is: "+grade.averageMarks(grade.getEnglish(), grade.getMaths(), grade.getScience()));
+//
+
+
+
+
+
+//        List<Grades> grade = new ArrayList<>();
+//
+//        grade.add(new Grades("Rajesh",60,70,80,70));
+//        grade.add(new Grades("John",40,100,10,50));
+//        grade.add(new Grades("Doe",100,80,80,86.67));
+//        grade.add(new Grades("Tom",20,15,42,25.67));
+
+//        System.out.println(grade);
+//        // Who scored maximum marks?
+//        grade.stream()
+
+
+
+
+
+//    public void grades(Grades grades)
+//
+//    {
+//        if (grades.averageMarks() <= 100 && grades.averageMarks() >= 90)
+//            System.out.println("You scored A");
+//
+//        else if(grades.average < 90 && grades.average >= 80)
+//            System.out.println("You scored B");
+//
+//        else if(grades.average < 80 && grades.average >= 70)
+//            System.out.println("You scored C");
+//        else
+//            System.out.println("You Failed!");
 //    }
