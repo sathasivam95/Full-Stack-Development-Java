@@ -1,5 +1,13 @@
 package pizzaapp;
 
+enum PizzaSize{
+
+    SMALL,
+    MEDIUM,
+    LARGE
+
+}
+
 public class Pizza {
 
     private int index;
@@ -29,9 +37,7 @@ public class Pizza {
         this.pizzaName = pizzaName;
     }
 
-    public double getPrice() {
-        return price;
-    }
+    public double getPrice() {return price;}
 
     public void setPrice(double price) {
         this.price = price;

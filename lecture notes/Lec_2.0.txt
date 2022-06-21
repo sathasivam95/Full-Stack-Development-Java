@@ -1,0 +1,3 @@
+1) Student grade calculator example, take 5 students objects calculate grade, who scored maximum marks.
+2) Who scored minimum marks in maths.
+
