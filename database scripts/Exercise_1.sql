@@ -85,7 +85,6 @@ FROM employees
 WHERE hire_date
 BETWEEN '2000-06-01' AND '2000-12-31';
 
-
 # WAQ to display each employee name with location
 SELECT employees.first_name, locations.city, locations.street_address
 FROM employees, departments, locations
