@@ -1,0 +1,66 @@
+MySQL Database
+
+Data --> useful information
+
+DBMS - Database Management System
+Database -> organisation structure
+
+RDMS - Relational Database Management System
+We are organising our data in terms of table
+Table -> rows and columns
+
+
+E.g,.
+College DBMS
+
+Departments
+id   dept_name   location
+111  computer    Block-B
+222  cvil        Block-C
+333  mechanical  Block-D
+
+Students
+st_id  std_name  subject   dept    
+101    Rajesh    Java      111
+102    Tom       Motor     333
+103    Harry     Java      111
+
+Relational --> one table is related 
+to another table using some common column, 
+dept column n students table is mapped to id column in Departments table, 
+we can not have dept record in students table which
+does not exist in Departments table.
+
+SQL --> Stuctured Query Language
+show databases;
+
+use mysql;
+
+show tables;
+
+select * from myuser; // star means all the columns
+
+select id, name from myuser; // collect the id and names from myuser tables.
+
+select id, name from myuser where id = 102; // search id and name where the id is exactly is 102.
+
+1) WAQ to display information about Nancy.
+select * from employees where first_name = "Nancy";
+		TABLE		COLUMN
+2) WAQ to display employees whose name starts with letter "N".
+
+select first_name from employees where first_name like "N%";
+select * from employees where first_name like "N%";
+	
+3) WAQ to display employees in department 90.
+select * from employees where department_id = 90;
+
+4) WAQ to display employees in department 60 in descending order.
+select * from employees order by department_id =60 desc;
+
+
+5) WAQ to display all employees where David is working.
+6) WAQ display employee with their department name.
+
+
+
