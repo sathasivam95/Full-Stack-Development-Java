@@ -1,13 +1,10 @@
 show databases;
 
 use mysql;
-
 show tables;
 
 use hr;
-
 show tables;
-
 select * from employees;
  
 select * from employees where first_name = "Nancy";
@@ -16,7 +13,6 @@ select * from employees where department_id = 90;
 select * from employees where department_id = 60 order by department_id desc; 
 select * from employees where first_name like '%n' or department_id = 30;
 select * from employees where department_id = 60 order by salary asc;
-
 
 select * from employees where department_id = 60 order by first_name desc;
 
@@ -78,13 +74,21 @@ from employees
 group by department_id;
 
 # WAQ to display employees who joined before Bruce.
-SELECT * 
+SELECT *
 FROM employees
-
+WHERE hire_date < (SELECT hire_date FROM employees WHERE first_name = 'Bruce');
+					# essentially selecting bruce hire date
 
 # WAQ to display employees who joined from June 2000 to December 2000.
 SELECT * 
 FROM employees
 WHERE hire_date
 BETWEEN '2000-06-01' AND '2000-12-31';
+
+
+# WAQ to display each employee name with location
+SELECT employees.first_name, locations.city, locations.street_address
+FROM employees, departments, locations
+WHERE employees.department_id = departments.department_id
+AND departments.location_id = locations.location_id;
 
