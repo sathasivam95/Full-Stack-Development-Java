@@ -58,7 +58,7 @@ select * from employees where department_id = 90;
 4) WAQ to display employees in department 60 in descending order.
 select * from employees order by department_id =60 desc;
 
-
+####################################################################################
 1) WAQ to display each employee name with location.
 
 SELECT e.first_name, l.city, l.street_address
@@ -70,6 +70,11 @@ AND d.location_id = l.location_id;
 2) WAQ to display employee information who joined in 2004
 salary department wise.
 3) WAQ to display maximum salary department wise.
+
+1) WAQ to display number of hiring per year.
+2) WAQ to display in which month MAX hiring happened?
+3) WAQ to display in which month MAX hiring happened in department 60?
+
 
 
 

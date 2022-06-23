@@ -91,3 +91,15 @@ FROM employees, departments, locations
 WHERE employees.department_id = departments.department_id
 AND departments.location_id = locations.location_id;
 
+select department_id, count(*)
+from employees
+group by department_id # It follows from the select
+having count(*) > 5;
+
+select first_name, hire_date, date_format(hire_date, '%M')
+from employees
+where date_format(hire_date, '%M') like 'June';
+
+select first_name, hire_date, date_format(hire_date, '%Y')
+from employees
+where date_format(hire_date, '%Y') like '2000'; # Calculation
