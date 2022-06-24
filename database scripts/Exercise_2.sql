@@ -1,7 +1,8 @@
+
 use hr;
 show tables;
 select * from employees;
-
+describe employees;
 
 # 1) WAQ to display number of hiring per year.
 select date_format(hire_date, '%Y') as Year ,

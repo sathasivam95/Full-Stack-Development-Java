@@ -34,6 +34,49 @@ does not exist in Departments table.
 SQL --> Stuctured Query Language
 show databases;
 
+1) What is join?
+Displaying data from multiple tables.
+
+2) Inner join, natural join, outer join,
+right outer join, left outer join, self join
+
+3)
+
+Cross Join --> no conditions where entered, cross
+Inner Join --> common values after mapping
+Outer Join --> extra values
+Left Outer Join --> extra values from left hand side table in query
+Right Outer Join --> extra values from right hand side table in query
+Self Join --> join of the table with itself
+
+1) Tell me number of rows for each join?
+
+A       B
+1	0	
+1	1  
+0	1	
+1	0	
+0	1
+
+Left Outer Join
+A	B
+1	NULL
+1	1
+1	NULL
+
+Right Outer Join
+A	B
+1	1
+NULL	1
+NULL	1
+
+cross join --> 25 rows
+inner join --> 1 row
+left outer join --> 5 rows Ans: 3 rows
+right outer join --> 5 rows Ans: 3 rows
+outer join --> 10 rows Ans: 5 rows
+
+
 use mysql;
 
 show tables;
@@ -75,6 +118,8 @@ salary department wise.
 2) WAQ to display in which month MAX hiring happened?
 3) WAQ to display in which month MAX hiring happened in department 60?
 
+###################################################################################
+1) WAQ to display employee name and his manager name.
 
 
 
