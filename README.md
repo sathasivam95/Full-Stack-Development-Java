@@ -1,2 +1,2 @@
 # Full-Stack-Development-Java
-This repo contains the tutorial for Java Development.
+This repo contains Java Projects
