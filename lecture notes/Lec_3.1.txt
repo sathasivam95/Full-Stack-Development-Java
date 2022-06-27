@@ -7,4 +7,11 @@ Project --> JAR/WAR File -->
 Builds Deliverable --> Builds JAR/WAR
 
 Helps full SDLC Cycle --> 
-1) Dependency --> 
+1) Dependency --> Maven helps us (Dependency Resolution)
+2) Compilation
+3) Test Case Cycle
+4) Final Build --> JAR
+5) Help us to structure the program
+6) GroupId: example google.com --> com.google
+
+1) Student grade calculator using data from Student database table in MySQL.
