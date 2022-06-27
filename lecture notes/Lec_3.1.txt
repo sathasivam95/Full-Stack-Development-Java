@@ -1,0 +1,10 @@
+Build Tool --> Maven
+
+Java File --> Compliation --> Class File
+
+Project --> JAR/WAR File --> 
+
+Builds Deliverable --> Builds JAR/WAR
+
+Helps full SDLC Cycle --> 
+1) Dependency --> 
