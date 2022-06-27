@@ -1,11 +1,11 @@
 use university;
 CREATE TABLE student(
-	std_id INT PRIMARY KEY not null,
-    first_name VARCHAR(25),
-    last_name VARCHAR(50),
-    mathematics INT null,
-    science INT null,
-    english INT null
+	std_id INT PRIMARY KEY NOT NULL,
+    first_name VARCHAR(25) NULL,
+    last_name VARCHAR(50) NULL,
+    mathematics INT NOT NULL,
+    science INT NOT NULL,
+    english INT NOT NULL
 );
 drop table student;
 show tables;
@@ -23,7 +23,6 @@ VALUES (6, 'Roger', 'Hinks', 20, 25, 20),
 (9, 'Hui', 'Haneef', 75, 75, 75),
 (10, 'Robert', 'Lewandowski', 85, 85, 85);
 
-
 UPDATE student SET
     first_name = 'William'
 WHERE std_id = 3;
@@ -33,3 +32,14 @@ SELECT avg(mathematics + science+ english)
 FROM student
 WHERE std_id=1;
 
+select * from student where first_name LIKE '%Tom%';
+select * from student where first_name LIKE 'Tom';
+select * from student where first_name LIKE '_Tom_';
+select * from student where first_name LIKE '*Tom*';
+
+select * from student where mathematics < 50;
+
+select * from student where mathematics BETWEEN 0 AND 50;
+
+select std_id, count(*) num_students
+from student group by std_id;

@@ -2,10 +2,6 @@ package org.example;
 
 import java.sql.*;
 
-/**
- * Hello world!
- *
- */
 public class StudentGradeCalculator
 {
     public static void main( String[] args ) throws SQLException
@@ -20,19 +16,16 @@ public class StudentGradeCalculator
             averageGrades = (result.getInt("mathematics") + result.getInt("science")
                 + result.getInt("english"))/3 ;
 
-        if(averageGrades <= 100 && averageGrades >= 90)
-        {
+        if(averageGrades <= 100 && averageGrades >= 90) {
             System.out.println(result.getString("first_name") + " " + result.getString("last_name") + " scored A");
-        } else if(averageGrades <= 90 && averageGrades >= 80)
-        {
+        }
+        else if(averageGrades <= 90 && averageGrades >= 80) {
             System.out.println(result.getString("first_name") + " " +result.getString("last_name") + " scored B");
         }
-        else if(averageGrades <= 80 && averageGrades >= 70)
-        {
+        else if(averageGrades <= 80 && averageGrades >= 70) {
             System.out.println(result.getString("first_name")+ " " +result.getString("last_name") + " scored C");
-
-        } else if (averageGrades <= 70 && averageGrades >= 50) {
-
+        }
+        else if (averageGrades <= 70 && averageGrades >= 50) {
             System.out.println(result.getString("first_name")+ " " +result.getString("last_name") + " scored D");
         }else
             System.out.println(result.getString("first_name")+ " " +result.getString("last_name") + " have failed");
@@ -40,10 +33,3 @@ public class StudentGradeCalculator
         }
     }
 }
-
-
-
-
-//        while(result.next()){
-//        System.out.println(result.getString("first_name")+" "+result.getInt("mathematics"));
-//        }
