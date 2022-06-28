@@ -29,3 +29,34 @@ Framework --> Minimum common work which every web application will use
 focus more on our business logic
 
 Spring Framework
+IOC --> Inversion of Control
+
+Object --> new Pizza(); --> Spring says you don't need to do this.
+
+who will create my object --> IOC container (supplies bean wherever is required)
+--> bean (like object but managed by Spring) --> loose coupling
+
+Annotations
+1) @SpringBootApplication
+
+Indicates a configuration class that declares one or more @Bean methods and also triggers auto-configuration and component scanning. This is a convenienceannotation that is equivalent to declaring @Configuration, @EnableAutoConfiguration and @ComponentScan.
+
+2) @RestController
+3) @RequestMapping("/")
+4) @ResponseBody
+
+4) @PathVariable
+
+Annotation which indicates that a method parameter should be bound to a URI template variable. Supported for RequestMapping annotated handler methods. 
+
+If the method parameter is Map<String, String>then the map is populated with all path variable names and values.
+
+5) @Component
+
+Indicates that an annotated class is a "component".Such classes are considered as candidates for auto-detection when using annotation-based configuration and classpath scanning. 
+
+Other class-level annotations may be considered as identifying a component as well, typically a special kind of component:e.g. the @Repository annotation or AspectJ's @Aspect annotation.
+
+6) @Autowired
+
+Marks a constructor, field, setter method, or config method as to be autowired by Spring's dependency injection facilities. This is an alternative to the JSR-330 javax.inject.Inject annotation, adding required-vs-optional semantics. 
