@@ -1,0 +1,31 @@
+Web Development using Java
+
+pre-requisites --> HTML,CSS,JavaScript
+
+example:- www.facebook.com
+
+client (browser) --> request --> 
+domain name (e.g., ip address of facebook server) -->
+response --> client
+
+client --> who is requesting
+server --> who is entertaining request coming from client
+
+Spring Framework
+Spring Boot
+
+MVC Architecture --> Model-View-Controller Architecture
+MVT Architectire --> Model-View-Template Architecture
+
+Model --> Database Table/Entity/POJO Classes
+View --> How user is facing the layer (Angular)
+Controller --> /home/profile --> 
+How response should be generated
+
+Microservices Architecture --> Built using multiple services for submodule
+
+Framework --> Minimum common work which every web application will use
+--> lib(classes/methods) already available -->
+focus more on our business logic
+
+Spring Framework
