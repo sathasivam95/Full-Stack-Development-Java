@@ -12,6 +12,7 @@ CREATE TABLE pet_owner (
 );
 
 DROP TABLE IF EXISTS pet_info;
+
 #need to do again
 CREATE TABLE pet_info (
 	pet_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
