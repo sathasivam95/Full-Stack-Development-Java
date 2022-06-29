@@ -19,8 +19,7 @@ MVT Architectire --> Model-View-Template Architecture
 
 Model --> Database Table/Entity/POJO Classes
 View --> How user is facing the layer (Angular)
-Controller --> /home/profile --> 
-How response should be generated
+Controller --> /home/profile --> How response should be generated
 
 Microservices Architecture --> Built using multiple services for submodule
 

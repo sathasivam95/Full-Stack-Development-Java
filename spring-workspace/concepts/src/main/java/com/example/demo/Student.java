@@ -115,6 +115,36 @@ public class Student {
 	public void setZoology(Long zoology) {
 		this.zoology = zoology;
 	}
+	
+	public Long getTotal() {
+		return mathematics+science+zoology;
+	}
+	
+	public Long getAvg() {
+		return (mathematics+science+zoology)/3;
+	}
+	
+	public String getGrade() {
+		
+		Long avg = (mathematics+science+zoology)/3;
+		
+		if(avg <= 100 && avg >= 90) {
+	        return ("Grade is A");
+	    }
+		else if(avg <= 90 && avg >= 80) {
+	        return ("Grade is B");
+	    }
+		else if(avg <= 80 && avg >= 70) {
+			return ("Grade is C");
+		}
+		else if(avg <= 70 && avg >= 50) {
+			return ("Grade is D");
+		}
+		else {
+			return ("Have failed");
+		}
+	}
+	
 
 	@Override
 	public String toString() {
