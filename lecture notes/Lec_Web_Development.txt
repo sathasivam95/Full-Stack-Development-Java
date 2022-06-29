@@ -93,7 +93,6 @@ frontend <--> backend
 
 /students --> {}
 
-
 POST --> Sending the data to the server
 
 

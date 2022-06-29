@@ -1,19 +1,25 @@
 package com.sg.classroster;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import com.sg.classroster.controller.ClassRosterController;
-import com.sg.classroster.dao.ClassRosterDao;
-import com.sg.classroster.dao.ClassRosterDaoFileImpl;
-import com.sg.classroster.ui.ClassRosterView;
-import com.sg.classroster.ui.UserIO;
-import com.sg.classroster.ui.UserIOConsoleImpl;
+
 
 public class App {
 
 	public static void main(String[] args) {
-	    UserIO myIo = new UserIOConsoleImpl();
-	    ClassRosterView myView = new ClassRosterView(myIo);
-	    ClassRosterDao myDao = new ClassRosterDaoFileImpl();
-	    ClassRosterController controller =new ClassRosterController(myDao, myView);
-	    controller.run();
+//	    UserIO myIo = new UserIOConsoleImpl();
+//	    ClassRosterView myView = new ClassRosterView(myIo);
+//	    ClassRosterDao myDao = new ClassRosterDaoFileImpl();
+//	    ClassRosterController controller =new ClassRosterController(myDao, myView);
+//	    controller.run();
+		
+		// Instantiate Spring Container
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+		ClassRosterController controller = ctx.getBean("controller",ClassRosterController.class);
+		controller.run();
+		
 	}
 }   
+	
