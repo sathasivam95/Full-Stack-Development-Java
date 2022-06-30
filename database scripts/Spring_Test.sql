@@ -18,3 +18,8 @@ insert into mystudentnew values(1, 'Tom', 'Hanks', 80, 70, 50),
 (10, 'Robert', 'Lewandowski', 85, 85, 85);
 
 select * from mystudentnew;
+select * from pizzahaven;
+
+select * from myusernew;
+insert into myusernew values(1, 'Tom'),
+(2,'Chris');

@@ -83,7 +83,9 @@ Teams implementing traditional Java EE patterns such as "Data Access Object"may 
 
 A class thus annotated is eligible for Spring DataAccessException translationwhen used in conjunction with a PersistenceExceptionTranslationPostProcessor. The annotated class is also clarified asto its role in the overall application architecture for the purpose of tooling,aspects, etc. 
 
-
+10) @Id
+11) @GeneratedValue
+12) @GetMapping --> HTTP Request and getting JSON
 
 API --> Application Programming Interface
 The way one app talks to another app
