@@ -97,7 +97,7 @@ frontend <--> backend
 
 POST --> Sending the data to the server
 
-
+// @Pathvariable is pointing to the reference whereas @Request Body is you putting in the value
 
 
 

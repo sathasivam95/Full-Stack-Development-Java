@@ -3,7 +3,11 @@ use mysql;
 show tables;
 
 select * from pizzaordernew;
-insert into pizzaordernew values (1, 'Tom', 'Hanks');
+insert into pizzaordernew values
+(1, 'Tom', 'Hanks'),
+(2, 'Michael', 'Son'),
+(3, 'Harry', 'Winks'),
+(4, 'Ronaldo', 'Junior');
 
 select * from pizzamenu;
 insert into pizzamenu values
