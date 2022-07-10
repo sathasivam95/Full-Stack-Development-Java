@@ -5,3 +5,14 @@ nothing to do with language Java
 
 ECMA2015 / ECMA6 --> it brought many standards to JS language
 We have many changes in syntax java like syntax for creating classes and objects.
+
+Angular Setup
+1) Download node.js
+node -v
+2) Verify npm
+npm -v
+3) Download Angular CLI -(Command Line Interface)
+npm install -g @angular/cli
+4) Create Sample Project 
+(e.g., ng new my-app) --> Creates a project
+5)
