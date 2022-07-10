@@ -6,6 +6,10 @@ nothing to do with language Java
 ECMA2015 / ECMA6 --> it brought many standards to JS language
 We have many changes in syntax java like syntax for creating classes and objects.
 
+Typescript
+JavaScript + Extra(Type, better OOP, scale)
+Compiled --> JavaScript code
+
 Angular Setup
 1) Download node.js
 node -v
@@ -15,4 +19,11 @@ npm -v
 npm install -g @angular/cli
 4) Create Sample Project 
 (e.g., ng new my-app) --> Creates a project
-5)
+5) Run the app using
+ng serve --open --> Auto opens app in the browser.
+
+Component
+Basic building block of any angular application
+1) app.component.ts + app.component.html + app.component.css + app.component.spec.ts
+
+Root Component --> Child Component, Grandchild, etc...
