@@ -6,7 +6,17 @@ import { students } from './students';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title:string = 'CS258';
+  
+  title = 'CS258';
   mystudents = students;
+  resultstudent = null;
+ 
+  calculateGrade(mystudents){
+
+ 
 }
+}
+
+

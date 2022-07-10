@@ -4,8 +4,14 @@
 <h2>Students Lists!</h2>
 
 <div *ngFor="let student of mystudents">
-  <h3>{{student.id}}</h3><h3>{{student.name}}</h3>
+  <h3>{{student.id}}</h3>
+  <h3>{{student.name}}</h3>
+  
   <p>{{student.intro}}</p>
   <p>{{student.subject}}</p>
-
+  <p>{{student.marks}}</p>
 </div>
+<!-- 
+<div *ngFor="let resultstudent of resultstudent">
+  <p>{{calculateGrade()}}</p>
+</div> -->
