@@ -8,7 +8,7 @@ import { Student, students } from './students';
 })
 
 export class AppComponent {
-  title2: String = 'CS258!';
+  title: String = 'CS258!';
   /*
   title = 'CS258!';
   mystudents = students;
