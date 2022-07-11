@@ -5,8 +5,10 @@ import { InMemoryDbService } from 'angular-in-memory-web-api';
 @Injectable({
   providedIn: 'root'
 })
+
+// FakeService
 export class InMemoryDataService implements InMemoryDbService{
-  createDB() {
+  createDb() {
   const students = [
     {
         id:101,
@@ -35,5 +37,4 @@ export class InMemoryDataService implements InMemoryDbService{
 ];
   return [students];
 }
-
 }
