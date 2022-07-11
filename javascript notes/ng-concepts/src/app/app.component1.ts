@@ -8,9 +8,9 @@ import { Student, students } from './students';
 })
 
 export class AppComponent {
-  title2: String = 'CS258!';
-  /*
-  title = 'CS258!';
+  
+  title1 = 'Title1';
+  title2:string = 'CS258!';
   mystudents = students;
 
 myIntro(){
@@ -20,7 +20,7 @@ myIntro(){
 onNotify(student: Student){
   alert('Yes you scored good grade, you will receive an email'+student.name);
 }
-*/
+
 }
 
 
