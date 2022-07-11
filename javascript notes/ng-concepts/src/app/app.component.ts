@@ -11,12 +11,15 @@ export class AppComponent {
   
   title = 'CS258';
   mystudents = students;
-  resultstudent = null;
- 
-  calculateGrade(mystudents){
 
- 
+myIntro(){
+  alert("Hey This is working!");
 }
+
+onNotify(){
+  alert('Yes you scored good grade, you will receive an email');
+}
+
 }
 
 

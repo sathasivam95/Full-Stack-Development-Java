@@ -4,18 +4,13 @@
 <h2>Students Lists!</h2>
 
 <div *ngFor="let student of mystudents">
-  <!-- <h3>{{student.id}}</h3> -->
-  <h3>{{student.name}}</h3>
-
-  <!-- <h3> 
-    <a [title]="student.intro + ' click here for more info' ">{{student.name}}</a>
-  </h3> -->
+  <h3>{{student.id}}</h3>
 
   <h3> 
-    <a [title]="student.intro + ' click here for more info' "></a>
+    <a [title]="student.intro + ' click here for more info' ">{{student.name}}</a>
   </h3>
   
-  <!-- <p>{{student.intro}}</p> -->
+  <p>{{student.intro}}</p>
 
   <!-- If the student object is available, 
     then it displays the property based on the condition-->
@@ -23,12 +18,11 @@
     Student Subject: {{student.subject}}</p> -->
 
 <!-- Event-->
-  <!-- <button type="button" (click)="myIntro()">Click Me!</button> -->
+  <button type="button" (click)="myIntro()">Click Me!</button>
 
-  <!-- <p>{{student.marks}}</p> -->
+  <p>{{student.marks}}</p>
 
-  <app-student-alerts [student]="student" (notify)="onNotify()"></app-student-alerts>
-
+  <app-student-alerts [student]="student"></app-student-alerts>
 </div>
 <!-- 
 <div *ngFor="let resultstudent of resultstudent">
