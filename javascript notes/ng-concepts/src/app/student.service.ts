@@ -10,18 +10,19 @@ const httpOptions = {
 @Injectable({
   providedIn: 'root'
 })
+
 export class StudentService {
   
   private studentsUrl = 'api/students';  // URL to web api
 
   //DI in Angular
-constructor(
-  private http: HttpClient) 
-{}
+  constructor(
+      private http: HttpClient) 
+  { }
 
 
-getStudents (): Observable<Student[]> {
-  return this.http.get<Student[]>(this.studentsUrl)
-}
+  getStudents (): Observable<Student[]> {
+  return this.http.get<Student[]>(this.studentsUrl);
+  }
 
 }

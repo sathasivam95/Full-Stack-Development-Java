@@ -17,10 +17,10 @@ export class StudentsComponent implements OnInit {
 
   constructor(private studentService: StudentService) { }
 
-
   ngOnInit(){
     this.getStudents();
   }
+
 
   onSelect(student:Student):void{
     this.selectedStudent = student;

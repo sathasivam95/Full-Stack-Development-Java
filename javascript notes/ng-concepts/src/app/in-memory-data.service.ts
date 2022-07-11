@@ -34,7 +34,7 @@ export class InMemoryDataService implements InMemoryDbService{
         subject: ['IT', 'AC', 'EE'],
         marks: 100
     }
-];
+  ];
   return [students];
-}
+  }
 }
