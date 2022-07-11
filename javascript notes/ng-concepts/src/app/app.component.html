@@ -27,10 +27,12 @@
 
   <!-- <p>{{student.marks}}</p> -->
 
-  <app-student-alerts [student]="student" (notify)="onNotify()"></app-student-alerts>
+  <app-student-alerts [student]="student" (notify)="onNotify(student)"></app-student-alerts>
 
 </div>
 <!-- 
 <div *ngFor="let resultstudent of resultstudent">
   <p>{{calculateGrade()}}</p>
 </div> -->
+
+<!---->
