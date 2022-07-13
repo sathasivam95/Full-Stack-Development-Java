@@ -9,6 +9,13 @@ export interface Student{
 
 }
 
+export class User{
+    constructor(
+        public id:number,
+        public name:string
+    ){}
+}
+
 export const students = [
     {
         id:101,

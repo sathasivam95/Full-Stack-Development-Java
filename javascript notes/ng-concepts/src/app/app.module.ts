@@ -9,16 +9,20 @@ import { AppComponent } from './app.component';
 import { StudentAlertsComponent } from './student-alerts/student-alerts.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { StudentsComponent } from './students/students.component';
+import { MyformsComponent } from './myforms/myforms.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentAlertsComponent,
     StudentDetailComponent,
-    StudentsComponent
+    StudentsComponent,
+    MyformsComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
