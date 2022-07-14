@@ -1,13 +1,10 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { HomeModule } from './home/home.module';
-import { ContactModule } from './contact/contact.module';
-import { ProjectsModule } from './projects/projects.module';
-import { ServicesModule } from './services/services.module';
+import { PostService } from './post.service';
 
 @NgModule({
   declarations: [
@@ -16,12 +13,9 @@ import { ServicesModule } from './services/services.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule,
-    ContactModule,
-    ProjectsModule,
-    ServicesModule
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

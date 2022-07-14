@@ -15,10 +15,7 @@ export class MyformsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
-get diagnostic(){
-  return JSON.stringify;
-}
+
 
   newUser(){
     this.model = new User(111, "");
