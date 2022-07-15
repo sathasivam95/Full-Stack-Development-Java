@@ -1,0 +1,39 @@
+<!-- <div class="container" id="containers">
+    <ul class="list-group">
+    
+        <li class="list-group-item" *ngFor="let student of mystudents" (click)="onSelect(student)">
+            <span class="badge badge-dark">{{student.id}}</span>
+            <span class="badge badge-light">{{student.name}}</span>
+            <span class="badge badge-light">{{student.contact}}</span>
+          </li>
+      </ul>
+    
+    </div> -->
+    <div class="container">
+		<div class="row">
+			<div class="col-8">
+                  <h3>Add Post</h3>
+                  <form action="addPost" method="POST" class="form">
+                      <div class="form-group">
+                          <label class="col-4" for="postTitle">Title</label>
+                          <input class="col-8 form-control" type="text" id="postTitle" name="title"/>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-4" for="postUser">User</label>
+                          <input class="col-8 form-control" type="text" id="postUser" name="userName"/>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-4" for="exampleFormControlTextarea1">Body of Post</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-4" for="postDate">Date of Post</label>
+                          <input class="col-8 form-control" type="date" id="postDate" name="dateOfPost"/>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-4" for="postExpiry">Date of Expiry</label>
+                          <input class="col-8 form-control" type="date" id="postExpiry" name="dateOfExpiry"/>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Add Post</button>
+                  </form>
+              </div>

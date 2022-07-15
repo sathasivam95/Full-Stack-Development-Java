@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StudentService } from '../student.service';
-import { Student, students } from '../students';
+import { Student } from '../students';
 
 @Component({
   selector: 'app-students',
@@ -8,8 +8,6 @@ import { Student, students } from '../students';
   styleUrls: ['./students.component.css']
 })
 export class StudentsComponent implements OnInit {
-
-
 
   //mystudents = students;
 
